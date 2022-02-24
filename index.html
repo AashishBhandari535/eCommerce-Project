@@ -1,0 +1,1083 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS starts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  
+  <title>Ecommerce Site</title>
+</head>
+
+<body onload="loading()">
+  <div id="loader"> 
+  </div>
+  
+
+  <!-- header starts -->
+  <header>
+    <div class="htop  container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3  order-lg-1 contact text-center"><a href="#"> Call us toll free :
+              <strong>(+1)866-540-3229</strong></a></div>
+
+          <div class="col-lg-6  order-lg-3 text-center">
+            <ul>
+              <a href="#">
+                <li><span><i class="fas fa-user"></i> My Account</span></li>
+              </a>
+              <a href="#">
+                <li><span><i class="fas fa-heart"></i>My Wishlist</span> </li>
+              </a>
+              <a href="#">
+                <li><span><i class="fas fa-check"></i>Checkout</span></li>
+              </a>
+              <a href="#">
+                <span><li class="border-0"> <i class="fas fa-unlock"></i>Log In</span></li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="col-lg-3  order-lg-2  d-flex justify-content-center">
+            <div class="dropdown currency">
+              <button class="btn btn-secondary dropdown-toggle shadow-none " type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Currency : USD
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li ><a class="dropdown-item "style="color: #EA3A3C;" href="#">Dollar(USD)</a></li>
+                <li><a class="dropdown-item" href="#">Euro(EUR)</a></li>
+              </ul>
+            </div>
+            <div class="dropdown language">
+              <button class="btn btn-secondary dropdown-toggle  shadow-none " type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="	http://demo.posthemes.com/pos_lion/layout4/img/l/1.jpg" alt="">
+                English
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" style="color: #EA3A3C;" href="#"><img src="	http://demo.posthemes.com/pos_lion/layout4/img/l/1.jpg" alt="English language"> English</a></li>
+                <li><a class="dropdown-item" href="#"><img src="	http://demo.posthemes.com/pos_lion/layout4/img/l/2.jpg" alt="Arabic language"> Arabic</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hmiddle container">
+      <div class="row">
+        <div class="col-lg-2 text-center">
+          <a href="#"><img
+              src="http://demo.posthemes.com/pos_lion/layout4/img/lion4-responsive-prestashop-theme-logo-14932178684.jpg" class="img-fluid"
+              alt=""></a>
+        </div>
+        <div class="col-lg-10 d-lg-flex align-items-center justify-content-around d-none d-lg-block">
+          <ul>
+            <li><a href="#" style="color: #EA3A3C;"> HOME</a></li>
+            <li> <a href="#">DELIVERY</a></li>
+            <li><a href="#"> TERMS AND CONDITIONS OF USE</a></li>
+            <li><a href="#">SECURE PAYMENT</a></li>
+            <li><a href="#">ABOUT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-lg-none d-sm-block">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hbottom container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-xl-3 d-lg-block d-none col-0">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle shadow-none" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span><i class="fas fa-list"></i>ALL CATEGORIES</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li class="option1"><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div><i class="fas fa-caret-right"></i>ELECTRONICS</div><i class="fas fa-chevron-right" >    
+                     </i>
+                  </div></a>
+                  <div class="drop-menu dropright1 border " id="dropright1">
+                    <div class="d-flex ">
+                      <div class="section1">
+                        <h4 class="text-center">LAPTOPS</h4>
+                        <ul class="text-center">
+                          <li><a href="#"> Dell Laptops</a></li>
+                          <li><a href="#"> HP Laptops</a></li>
+                            <li><a href="#">Lenovo Laptops</a></li>
+                              <li><a href="#">Apple Laptops</a></li>
+                        </ul>
+      
+                      </div>
+                      <div class="section2">
+                        <h4 class="text-center">LAPTOPS</h4>
+                        <ul class="text-center">
+                          <li><a href="#"> Dell Laptops</a></li>
+                          <li> <a href="#">HP Laptops</a></li>
+                            <li><a href="#">Lenovo Laptops</a></li>
+                              <li><a href="#">Apple Laptops</a></li>
+                        </ul>
+      
+                      </div>
+                      <div class="section3">
+                        <h4 class="text-center">LAPTOPS</h4>
+                        <ul class="text-center">
+                          <li><a href="#"> Dell Laptops</a></li>
+                          <li> <a href="#">HP Laptops</a></li>
+                            <li><a href="#">Lenovo Laptops</a></li>
+                              <li><a href="#">Apple Laptops</a></li>
+                        </ul>
+      
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li  class="option2 "><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div><i class="fas fa-caret-right"></i>FASHION</div><i class="fas fa-chevron-right"></i>
+
+                  </div></a>
+                  <div class="drop-menu dropright2 border " id="dropright2">
+                    <div class="d-flex ">
+                      <div class="section1">
+                        <h4 class="text-center">LAPTOPS</h4>
+                        <ul class="text-center">
+                          <li><a href="#"> Dell Laptops</a></li>
+                          <li><a href="#"> HP Laptops</a></li>
+                            <li><a href="#">Lenovo Laptops</a></li>
+                              <li><a href="#">Apple Laptops</a></li>
+                        </ul>
+      
+                      </div>
+                      <div class="section2">
+                        <h4 class="text-center">LAPTOPS</h4>
+                        <ul class="text-center">
+                          <li><a href="#"> Dell Laptops</a></li>
+                          <li> <a href="#">HP Laptops</a></li>
+                            <li><a href="#">Lenovo Laptops</a></li>
+                              <li><a href="#">Apple Laptops</a></li>
+                        </ul>
+      
+                      </div>
+                      <div class="section3">
+                        <h4 class="text-center">LAPTOPS</h4>
+                        <ul class="text-center">
+                          <li><a href="#"> Dell Laptops</a></li>
+                          <li> <a href="#">HP Laptops</a></li>
+                            <li><a href="#">Lenovo Laptops</a></li>
+                              <li><a href="#">Apple Laptops</a></li>
+                        </ul>
+      
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="option3"><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div><i class="fas fa-caret-right"></i>FURNITURED & DECOR</div><i class="fas fa-chevron-right"></i>
+                   
+                  </div></a>
+                  <div class="drop-menu dropright3 border " id="dropright3">
+                    <div class="d-flex ">
+                      <div class="section1">
+                        <h4 class="text-center">LAPTOPS</h4>
+                        <ul class="text-center">
+                          <li><a href="#"> Dell Laptops</a></li>
+                          <li><a href="#"> HP Laptops</a></li>
+                            <li><a href="#">Lenovo Laptops</a></li>
+                              <li><a href="#">Apple Laptops</a></li>
+                        </ul>
+      
+                      </div>
+                      <div class="section2">
+                        <h4 class="text-center">LAPTOPS</h4>
+                        <ul class="text-center">
+                          <li><a href="#"> Dell Laptops</a></li>
+                          <li> <a href="#">HP Laptops</a></li>
+                            <li><a href="#">Lenovo Laptops</a></li>
+                              <li><a href="#">Apple Laptops</a></li>
+                        </ul>
+      
+                      </div>
+                      <div class="section3">
+                        <h4 class="text-center">LAPTOPS</h4>
+                        <ul class="text-center">
+                          <li><a href="#"> Dell Laptops</a></li>
+                          <li> <a href="#">HP Laptops</a></li>
+                            <li><a href="#">Lenovo Laptops</a></li>
+                              <li><a href="#">Apple Laptops</a></li>
+                        </ul>
+      
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-caret-right"></i>TOYS & HOBBIES</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-caret-right"></i>ACCESSORIES</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fas fa-caret-right"></i>JEWELRY & WATCHES</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-caret-right"></i>HEALTH & BEAUTY</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="fas fa-caret-right"></i>BOOKS & OFFICE</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-caret-right"></i>SPORT & OUTDOOR</a></li>
+                                  <li><a class="dropdown-item" href="#"><i class="fas fa-caret-right"></i>MORE CATEGORIES</a></li> 
+              </ul>
+             
+
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-7 col-sm-8">
+            <div class="search d-flex">
+              <input type="text" placeholder="Enter your search...">
+              <div class="dropdown ">
+                <button class="btn btn-secondary dropdown-toggle shadow-none" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>All Categories</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"> Electronics</a></li>
+                    <li><a class="dropdown-item" href="#"> --Laptops</a></li>
+                      <li><a class="dropdown-item" href="#"> ---Dell Laptops</a></li>
+                        <li><a class="dropdown-item" href="#">---HP Laptops</a></li>
+                          <li><a class="dropdown-item" href="#">---Lenovo Laptops</a></li>
+                            <li><a class="dropdown-item" href="#"> Fashion</a></li>
+                              <li><a class="dropdown-item" href="#"> --Dresses</a></li>
+                                <li><a class="dropdown-item" href="#"> ---Sweater</a></li>
+                                  <li><a class="dropdown-item" href="#"> ---Evening</a></li>
+                                    <li><a class="dropdown-item" href="#"> ---Day</a></li>
+                                      <li><a class="dropdown-item" href="#"> --Clothing</a></li>
+                                        <li><a class="dropdown-item" href="#"> ---Coats Jackets</a></li>
+                                          <li><a class="dropdown-item" href="#"> ---Raincoats</a></li>
+                                            <li><a class="dropdown-item" href="#">---Jackets</a></li>
+                                              <li><a class="dropdown-item" href="#">---T-shirts</a></li>
+                                                <li><a class="dropdown-item" href="#"> Furnitured & Decor</a></li>
+                                                  <li><a class="dropdown-item" href="#"> --Chair</a></li>
+                                                    <li><a class="dropdown-item" href="#">---Dining room</a></li>
+                                                      <li><a class="dropdown-item" href="#">---bedroom</a></li>
+                                                        <li><a class="dropdown-item" href="#">--- Home & Office</a></li>
+                                                          <li><a class="dropdown-item" href="#">---living room</a></li>
+                                                            <li><a class="dropdown-item" href="#">--Sofa</a></li>
+                                                              <li><a class="dropdown-item" href="#">---Fabric Sofas</a></li>
+                                                                <li><a class="dropdown-item" href="#">---Leather Sofas</a></li>
+                                                                  <li><a class="dropdown-item" href="#">---Corner Sofas</a></li>
+                                                                    <li><a class="dropdown-item" href="#">---Sofa Beds</a></li>
+                                                                      <li><a class="dropdown-item" href="#">Toys & Hobbies</a></li>
+                                                                        <li><a class="dropdown-item" href="#"> --Boys' Toys</a></li>
+                                                                          <li><a class="dropdown-item" href="#"> ---Building Toys</a></li>
+                                                                            <li><a class="dropdown-item" href="#">---Electronics Toys</a></li>
+                                                                              <li><a class="dropdown-item" href="#">---action figures</a></li>
+                                                                                <li><a class="dropdown-item" href="#"> Accessories</a></li>
+                                                                                  <li><a class="dropdown-item" href="#">Jewelry & Watches</a></li>
+                                                                                    <li><a class="dropdown-item" href="#"> Health & Beauty</a></li>
+                                                                                      <li><a class="dropdown-item" href="#">Books & Office</a></li>
+
+
+                </ul>
+              </div>
+              <button class="search-plus">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-xl-2 col-sm-4 icons py-2 d-flex align-items-center justify-content-center ">
+            <i class="fas fa-shopping-bag"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- carousel starts -->
+  <section class="container">
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="http://demo.posthemes.com/pos_lion/layout4/img/blockslideshow/7.jpg" class="d-block w-100 img-fluid"
+            alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="http://demo.posthemes.com/pos_lion/layout4/img/blockslideshow/8.jpg" class="d-block w-100 img-fluid"
+            alt="...">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- categories starts -->
+  <section class="container categories">
+    <p class="title">OUR CATEGORIES</p>
+    <div class="owl-one owl-carousel ">
+      <a href="#">
+        <div class="content">
+          <figure>
+            <img
+              src="http://demo.posthemes.com/pos_lion/layout4/modules/poslistcategories/images/eb59b0b7dad25e3c4906207edaafe27b1146cea1_1.jpg"
+              alt="">
+            <p>(12)Products</p>
+          </figure>
+          <p>Electronics</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="content">
+          <figure>
+            <img
+              src="http://demo.posthemes.com/pos_lion/layout4/modules/poslistcategories/images/733d33dc8bad6bb967ba30f601104f29f8ffed3c_2.jpg"
+              alt="">
+            <p>(12)Products</p>
+          </figure>
+          <p>Fashion</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="content">
+          <figure>
+            <img
+              src="http://demo.posthemes.com/pos_lion/layout4/modules/poslistcategories/images/123204067b061b28f5de5cfb25fe1414b8358faa_3.jpg"
+              alt="">
+            <p>(12)Products</p>
+          </figure>
+          <p>Camera</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="content">
+          <figure>
+            <img
+              src="http://demo.posthemes.com/pos_lion/layout4/modules/poslistcategories/images/488fd72f5a35728c677af75dccb2d30017963509_4.jpg"
+              alt="">
+            <p>(12)Products</p>
+          </figure>
+          <p>Accessories</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="content">
+          <figure>
+            <img
+              src="http://demo.posthemes.com/pos_lion/layout4/modules/poslistcategories/images/e43446d757050fa18353073673d5723d52951908_5.jpg"
+              alt="">
+            <p>(12)Products</p>
+          </figure>
+          <p>Furnitured & Decor</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="content">
+          <figure>
+            <img
+              src="http://demo.posthemes.com/pos_lion/layout4/modules/poslistcategories/images/733d33dc8bad6bb967ba30f601104f29f8ffed3c_2.jpg"
+              alt="">
+            <p>(12)Products</p>
+          </figure>
+          <p>Handbags</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="content">
+          <figure>
+            <img
+              src="http://demo.posthemes.com/pos_lion/layout4/modules/poslistcategories/images/eb59b0b7dad25e3c4906207edaafe27b1146cea1_1.jpg"
+              alt="">
+            <p>(12)Products</p>
+          </figure>
+          <p>Jewellery & Watches</p>
+        </div>
+      </a>
+
+    </div>
+    <div class="row">
+      <div class="col-md-4 ">
+        <figure>
+          <img src="http://demo.posthemes.com/pos_lion/layout4/img/cms/1_1.jpg" alt="">
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <img src="http://demo.posthemes.com/pos_lion/layout4/img/cms/2_1.jpg" alt="">
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <img src="	http://demo.posthemes.com/pos_lion/layout4/img/cms/3_1.jpg" alt="">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- new arrivals starts -->
+  <section class="container arrivals">
+    <div class="row">
+      <div class="col-lg-6 mb-3 mb-lg-0">
+        <div class="content">
+          <div class="title">
+            <p>FEATURED</p>
+          </div>
+          <div class="owl-carousel owl-two">
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/143-home_default/printed-chiffon-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>hello</p>
+              <p>$50.99</p>
+            </div>
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/370-home_default/printed-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>hello</p>
+              <p>$50.99</p>
+            </div>
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/361-home_default/printed-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>hello</p>
+              <p>$50.99</p>
+            </div>
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/162-home_default/printed-chiffon-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>hello</p>
+              <p>$50.99</p>
+            </div>
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/361-home_default/printed-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <div class="icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <p></p>
+              <p></p>
+            </div>
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/143-home_default/printed-chiffon-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <div class="icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="content">
+          <div class="title">
+            <p>NEW ARRIVALS</p>
+          </div>
+          <div class="owl-carousel owl-two">
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/143-home_default/printed-chiffon-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>hello</p>
+              <p>$50.99</p>
+            </div>
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/370-home_default/printed-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>hello</p>
+              <p>$50.99</p>
+            </div>
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/361-home_default/printed-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>hello</p>
+              <p>$50.99</p>
+            </div>
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/162-home_default/printed-chiffon-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>hello</p>
+              <p>$50.99</p>
+            </div>
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/361-home_default/printed-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <div class="icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <p></p>
+              <p></p>
+            </div>
+            <div class="subcontent">
+              <figure>
+                <span class="search"><i class="fas fa-search"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                <span class="exchange"><i class="fas fa-sync"></i></span>
+                <img src="http://demo.posthemes.com/pos_lion/layout4/143-home_default/printed-chiffon-dress.jpg" alt="">
+              </figure>
+              <div class="icons">
+                <div class="icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <figure>
+          <a href="#">
+            <img src="	http://demo.posthemes.com/pos_lion/layout4/img/cms/1_4.jpg" alt="">
+          </a>
+        </figure>
+      </div>
+      <div class="col-md-3">
+        <figure>
+          <a href="#">
+            <img src="	http://demo.posthemes.com/pos_lion/layout4/img/cms/2_4.jpg" alt="">
+          </a>
+        </figure>
+      </div>
+      <div class="col-md-3">
+        <figure>
+          <a href="#">
+            <img src="	http://demo.posthemes.com/pos_lion/layout4/img/cms/3_4.jpg" alt="">
+          </a>
+        </figure>
+      </div>
+      <div class="col-md-3">
+        <figure>
+          <a href="#">
+            <img src="	http://demo.posthemes.com/pos_lion/layout4/img/cms/4_4.jpg" alt="">
+          </a>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- blog section starts -->
+  <!-- <section class="container blog">
+    <div class="row ">
+      <div class="col-lg-4 ">
+        <div class="content">
+          <div class="title">
+            <p>FROM THE BLOG</p>
+          </div>
+          <div class="slider">
+            <div class="owl-carousel owl-five">
+              <div class="subcontent ">
+                <div class="items">
+                  <div class="img">
+                    <figure>
+                      <a href="#">
+                        <img src="	http://demo.posthemes.com/pos_lion/layout4/modules/smartblog/images/5.jpg" alt="">
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="desc">
+                    <h4>hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ullam?</p>
+                  </div>
+                </div>
+                <div class="items">
+                  <div class="img">
+                    <figure>
+                      <a href="#">
+                        <img src="http://demo.posthemes.com/pos_lion/layout4/modules/smartblog/images/4.jpg" alt="">
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="desc">
+                    <h4>hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ullam?</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="subcontent ">
+                <div class="items">
+                  <div class="img">
+                    <figure>
+                      <a href="#">
+                        <img src="http://demo.posthemes.com/pos_lion/layout4/modules/smartblog/images/4.jpg" alt="">
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="desc">
+                    <h4>hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ullam?</p>
+                  </div>
+                </div>
+                <div class="items">
+                  <div class="img">
+                    <figure>
+                      <a href="#">
+                        <img src="	http://demo.posthemes.com/pos_lion/layout4/modules/smartblog/images/2.jpg" alt="">
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="desc">
+                    <h4>hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ullam?</p>
+                  </div>
+                </div>
+              </div>
+              <div class="subcontent">
+                <div class="items">
+                  <div class="img">
+                    <figure>
+                      <a href="#">
+                        <img src="	http://demo.posthemes.com/pos_lion/layout4/modules/smartblog/images/3.jpg" alt="">
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="desc">
+                    <h4>hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ullam?</p>
+                  </div>
+                </div>
+                <div class="items">
+                  <div class="img">
+                    <figure>
+                      <a href="#">
+                        <img src="	http://demo.posthemes.com/pos_lion/layout4/modules/smartblog/images/5.jpg" alt="">
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="desc">
+                    <h4>hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ullam?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 ">
+        <div class="content">
+          <div class="title">
+            <p>OUR BRANDS</p>
+          </div>
+          <div class="owl-carousel owl-six">
+            <div class="logo">
+              <div class="subcontent">
+                <a href="#">
+                  <figure>
+                    <img src="	http://demo.posthemes.com/pos_lion/layout4/img/blocklogo/1.jpg" alt="">
+                  </figure>
+                </a>
+              </div>
+              <div class="subcontent">
+                <a href="#">
+                  <figure>
+                    <img src="http://demo.posthemes.com/pos_lion/layout4/img/blocklogo/2.jpg" alt="">
+                  </figure>
+                </a>
+              </div>
+              <div class="subcontent">
+                <a href="#">
+                  <figure>
+                    <img src="http://demo.posthemes.com/pos_lion/layout4/img/blocklogo/3.jpg" alt="">
+                  </figure>
+                </a>
+              </div>
+            </div>
+            <div class="logo">
+              <div class="subcontent">
+                <a href="#">
+                  <figure>
+                    <img src="http://demo.posthemes.com/pos_lion/layout4/img/blocklogo/6.jpg" alt="">
+                  </figure>
+                </a>
+              </div>
+              <div class="subcontent">
+                <a href="#">
+                  <figure>
+                    <img src="http://demo.posthemes.com/pos_lion/layout4/img/blocklogo/4.jpg" alt="">
+                  </figure>
+                </a>
+              </div>
+              <div class="subcontent">
+                <a href="#">
+                  <figure>
+                    <img src="http://demo.posthemes.com/pos_lion/layout4/img/blocklogo/6.jpg" alt="">
+                  </figure>
+                </a>
+              </div>
+            </div>
+            <div class="logo">
+              <div class="subcontent">
+                <a href="#">
+                  <figure>
+                    <img src="http://demo.posthemes.com/pos_lion/layout4/img/blocklogo/7.jpg" alt="">
+                  </figure>
+                </a>
+              </div>
+              <div class="subcontent">
+                <a href="#">
+                  <figure>
+                    <img src="http://demo.posthemes.com/pos_lion/layout4/img/blocklogo/4.jpg" alt="">
+                  </figure>
+                </a>
+              </div>
+              <div class="subcontent">
+                <a href="#">
+                  <figure>
+                    <img src="http://demo.posthemes.com/pos_lion/layout4/img/blocklogo/7.jpg" alt="">
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 ">
+        <div class="content">
+          <div class="title">
+            <p>WHY CHOOSE US?</p>
+          </div>
+          <div class="row">
+            <div class="col-12 ">
+              <div class="icons"><i class="fas fa-truck"></i></div>
+              <div class="desc">FREE SHIPPING ON ORDERS OVER $100</div>
+            </div>
+            <div class="col-12 ">
+              <div class="icons"><i class="fa fa-history" aria-hidden="true"></i></div>
+              <div class="desc">30-DAY RETURNS MONEY BACK GUARANTEE</div>
+            </div>
+            <div class="col-12 ">
+              <div class="icons"><i class="fas fa-headphones"></i></div>
+              <div class="desc">24/7 ONLINE SUPPORT CONSULTATIONS</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+  <!-- footer section starts -->
+  <footer>
+    <div class="top container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-12 logo">
+            <a href="#"><img src="http://demo.posthemes.com/pos_lion/layout4/img/cms/logo_footer.png" alt=""></a>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="list d-flex justify-content-center align-items-center">
+              <ul class="px-0">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fas fa-rss"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+              <div class="container-fluid px-0">
+                <h4>NEWSLETTER</h4>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#topnav" aria-controls="topnav" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse " id="topnav">
+                  <div class="d-flex w-100">
+                    <input type="email" placeholder="Enter Your Email" class="w-100">
+                    <div class="press">
+                      <button class="subscribe"><span>SUBSCRIBE!</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="middle container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <nav class="navbar navbar-expand-md navbar-light d-md-flex flex-md-column align-items-md-start">
+                <h4>STORE INFORMATION</h4>
+                <input type="checkbox" name="" class="nav-toggler fas fa-plus-circle d-md-none"  data-bs-toggle="collapse" data-bs-target="#storeinformation" >
+                <div class="collapse navbar-collapse " id="storeinformation">
+                  <ul>
+                    <li><i class="fas fa-home"></i>PO Box 16122 Collins Street West Victoria 8007 Australia</li>
+                    <li><i class="fas fa-phone-square-alt"></i>(+1)866-550-3669</li>
+                    <li><i class="fas fa-envelope-square"></i>demo@posthemes.com</li>
+                  </ul>
+                </div>
+            </nav>
+          </div>
+          <div class="col-md-3">
+            <nav class="navbar navbar-expand-md navbar-light d-md-flex flex-md-column align-items-md-start">
+                <h4>INFORMATION</h4>
+                <input type="checkbox" name="" class="nav-toggler fas fa-plus-circle d-md-none"  data-bs-toggle="collapse" data-bs-target="#INFORMATION" >
+                <div class="collapse navbar-collapse " id="INFORMATION">
+                  <ul>
+                    <li><a href="#"><i class="fas fa-circle"></i>Specials</a></li> 
+                    <li><a href="#"><i class="fas fa-circle"></i>New Products</a></li> 
+                    <li><a href="#"><i class="fas fa-circle"></i>Best Sellers</a></li> 
+                    <li><a href="#"><i class="fas fa-circle"></i>Our Stores</a></li> 
+                    <li><a href="#"><i class="fas fa-circle"></i>Contact Us</a></li> 
+                  </ul>
+                </div>
+            </nav>
+          </div>
+          <div class="col-md-3">
+            <nav class="navbar navbar-expand-md navbar-light d-md-flex flex-md-column align-items-md-start">
+                <h4>MY ACCOUNT</h4>
+                <input type="checkbox" name="" class="nav-toggler fas fa-plus-circle d-md-none"  data-bs-toggle="collapse" data-bs-target="#myaccount" >
+                <div class="collapse navbar-collapse " id="myaccount">
+                  <ul>
+                    <li><a href="#"> <i class="fas fa-circle"></i>My Orders</a></li>
+                    <li><a href="#"><i class="fas fa-circle"></i>My Account</a></li>
+                      <li><a href="#"><i class="fas fa-circle"></i>My Credit Slips</a></li>
+                        <li><a href="#"><i class="fas fa-circle"></i>My Addresses</a></li>
+                          <li><a href="#"><i class="fas fa-circle"></i>My Personal Info</a></li>
+                </div>
+            </nav>
+          </div>
+          <div class="col-md-3">
+            <nav class="navbar navbar-expand-md navbar-light d-md-flex flex-md-column align-items-md-start">
+                <h4>INSTAGRAM</h4>
+                <input type="checkbox" name="" class="nav-toggler fas fa-plus-circle d-md-none"  data-bs-toggle="collapse" data-bs-target="#INSTAGRAM" >
+                <div class="collapse navbar-collapse " id="INSTAGRAM">
+                  <p>Follow our instagram</p>
+                </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+              Copyright <i class="far fa-copyright"></i> <span>Posthemes</span> . All Rights Reserved
+          </div>
+          <div class="col-lg-6">
+            <a href="#"><img src="http://demo.posthemes.com/pos_lion/layout4/img/cms/payment.png" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- gototop button -->
+  <a href="#">
+    <div class="goTop">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+  </a>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/js/index.js"></script>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
